@@ -2,18 +2,18 @@ package view.command;
 
 import view.Console;
 
-public class RamdomList extends Command{
+public class RamdomList extends Command {
 
     public RamdomList(Console console) {
-       super(console);
+        super(console);
 
     }
 
-    public String getDescription(){
+    public String getDescription() {
         return "Показать списки";
     }
 
-    public void execute(){
+    public void execute() {
         console.randomListConsole();
     }
 

@@ -21,8 +21,6 @@ public class Service {
     }
 
 
-
-
     public String getAverageList() {
         StringBuilder st = new StringBuilder();
         if (list1.getSize() == 0 || list2.getSize() == 0 || average.findAverage(list1) == 0.0 || average.findAverage(list2) == 0.00) {

@@ -18,8 +18,6 @@ import static org.mockito.Mockito.*;
 public class ListTest {
 
 
-
-
     /**
      * Тест на проверку размера списка
      */
@@ -41,6 +39,7 @@ public class ListTest {
         average.findAverage(list);
         assertEquals(3.0, average.findAverage(list));
     }
+
     /**
      * Тест на проверку среднего значения списков - значение первого больше
      */
@@ -75,6 +74,7 @@ public class ListTest {
         assertEquals("Среднее значение первого списка больше", aс.comparisonValues(list1, list2));
 
     }
+
     /**
      * Тест на проверку среднего значения списков - значения равны
      */
@@ -118,12 +118,11 @@ public class ListTest {
     }
 
 
-
     /**
      * Тест на проверку если списки с нулевым размером
      */
     @Test
-    public void testNullSizeList(){
+    public void testNullSizeList() {
         Service service = new Service();
         NumberList list = new NumberList();
 
@@ -136,7 +135,7 @@ public class ListTest {
      * Тест на проверку если списки с нулевым средним значением
      */
     @Test
-    public void testNullValueAverageList(){
+    public void testNullValueAverageList() {
         Integer[] array = {0, 0, 0, 0, 0};
         NumberList numberList = new NumberList(array);
         AverageComparison average = new AverageComparison();

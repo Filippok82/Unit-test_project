@@ -7,11 +7,11 @@ public class Finish extends Command {
         super(console);
     }
 
-    public String getDescription(){
+    public String getDescription() {
         return "Выйти";
     }
 
-    public void execute(){
+    public void execute() {
         console.finish();
     }
 }

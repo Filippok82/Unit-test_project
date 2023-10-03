@@ -28,7 +28,7 @@ public class NumberList {
     public List<Integer> randomSetList(int size) {
         Random random = new Random();
         for (int i = 0; i < size; i++) {
-            int num = random.nextInt(1,20);
+            int num = random.nextInt(1, 20);
             numberList.add(num);
         }
         return numberList;

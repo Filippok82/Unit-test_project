@@ -5,7 +5,6 @@ public class AverageComparison extends NumberList {
     private double average;
 
 
-
     public double findAverage(NumberList list) {
         double sum = 0;
         for (int i = 0; i < list.getSize(); i++) {
